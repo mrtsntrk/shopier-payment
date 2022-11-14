@@ -204,6 +204,7 @@ class Shopier
 		{
 			return [
 				'id' => true,
+				'paket' => true,
 				'first_name' => true,
 				'last_name' => true,
 				'email' => true,
