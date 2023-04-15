@@ -1,10 +1,10 @@
 <?php
 //Shopierdan gelen postlar.
-$status = $_POST["status"];
-$invoiceId = $_POST["platform_order_id"];
-$transactionId = $_POST["payment_id"];
-$installment = $_POST["installment"];
-$signature = $_POST["signature"];
+$status = @$_POST["status"];
+$invoiceId = @$_POST["platform_order_id"];
+$transactionId = @$_POST["payment_id"];
+$installment = @$_POST["installment"];
+$signature = @$_POST["signature"];
 
 /* Bu kısımda kullanıcının işlem başarılı ve başarısızsa yönleneceği değişkenlerdir. */
 $url = 'https://mertsenturk.net/';
