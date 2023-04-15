@@ -2,13 +2,13 @@
 // emreakdas.com
 class Shopier
 	{
-		private $payment_url = 'https://www.shopier.com/ShowProduct/api_pay4.php';
-		private
-			$api_key,
-			$api_secret,
-			$module_version,
-			$buyer = [],
-			$currency = 'TRY';
+		public string $payment_url = 'https://www.shopier.com/ShowProduct/api_pay4.php';
+		public
+			string $api_key,
+			string $api_secret,
+			array $module_version,
+			array $buyer = [],
+			string $currency = 'TRY';
 
 		public function __construct($api_key, $api_secret, $module_version = ('1.0.4'))
 		{
